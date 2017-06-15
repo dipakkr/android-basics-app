@@ -11,9 +11,9 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_marginBottom="36dp"
-        android:layout_above="@+id/linearLayout2"
-        android:layout_alignStart="@+id/linearLayout2">
+        android:layout_marginTop="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText">
 
         <TextView
             android:id="@+id/textView"
@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0.0.0"
-            android:textSize="20sp" />
+            android:textColor="#000"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -35,9 +36,10 @@
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout2">
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginTop="12dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/longitude"
-            android:textSize="20sp"
+            android:textSize="16sp"
+            android:textColor="#000"
             android:text="0.0.0"/>
 
     </LinearLayout>
@@ -63,18 +66,42 @@
         android:layout_marginTop="33dp">
 
         <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Altitude : "
-            android:textSize="20sp"/>
+            android:text="Address : "
+            android:textSize="20sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/altitude"
-            android:textSize="20sp"
-            android:text="0 m"/>
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text=""/>
 
     </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#e1e1e1"
+        android:layout_margin="20dp"
+        android:id="@+id/editText"
+        android:gravity="center"
+        android:text="Location "
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_fetch"
+        android:text="Fetch"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

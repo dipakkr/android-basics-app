@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Location and Map Module</string>
+
+    <string name="service_not_availabel">No Service</string>
+    <string name="invalid_location">Invalid Location </string>
 </resources>
