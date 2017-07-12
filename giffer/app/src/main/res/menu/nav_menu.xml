@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_beenhere_black_24dp"
+            android:title="@string/nav_favourites"/>
+
+        <item
+            android:id="@+id/nav_tags"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="@string/nav_tags"/>
+    </group>
+
+    <item android:title="">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:title="@string/setting"
+                android:icon="@drawable/ic_phonelink_setup_black_24dp"/>
+
+            <item
+                android:enabled="true"
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/send" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/about"/>
+
+        </menu>
+    </item>
+
+</menu>
